@@ -17,7 +17,7 @@ RCT_EXPORT_MODULE()
 RCT_EXPORT_METHOD(fetchPhotos:(NSString *)imgURL resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
 {
     NSLog(@"local Image URL :====> %@",imgURL);
-    CGSize retinaSquare = CGSizeMake(600, 600);
+    CGSize retinaSquare = CGSizeMake(60, 60);
     
     PHImageRequestOptions *cropToSquare = [[PHImageRequestOptions alloc] init];
     cropToSquare.resizeMode = PHImageRequestOptionsResizeModeExact;
