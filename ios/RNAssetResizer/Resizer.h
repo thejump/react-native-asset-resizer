@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <React/RCTViewManager.h>
 
-@interface RNAssetResizer : RCTViewManager <RCTBridgeModule>
+@interface RNAssetResizer : NSObject <RCTBridgeModule>
+  
 
 @end
