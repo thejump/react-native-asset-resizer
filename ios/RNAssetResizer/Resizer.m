@@ -14,10 +14,12 @@
 RCT_EXPORT_MODULE()
 
 // Compress Image Method
-RCT_EXPORT_METHOD(fetchPhotos:(NSString *)imgURL resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
-{
-    NSLog(@"local Image URL :====> %@",imgURL);
-    CGSize retinaSquare = CGSizeMake(60, 60);
+RCT_EXPORT_METHOD(fetchPhotos:(NSString *)imgURL
+                  width:(float)width
+                  height:(float)height
+                  resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
+{   NSLog(@"local Image URL :====> %@",imgURL);
+    CGSize retinaSquare = CGSizeMake(width,height);
     
     PHImageRequestOptions *cropToSquare = [[PHImageRequestOptions alloc] init];
     cropToSquare.resizeMode = PHImageRequestOptionsResizeModeExact;
