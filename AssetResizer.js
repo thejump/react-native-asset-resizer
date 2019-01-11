@@ -7,4 +7,4 @@ import PropTypes from 'prop-types'
 
 const RNAssetResizer = requireNativeComponent('RNAssetResizer', RNAssetResizer);
 
-export default AssetResizer
+export default RNAssetResizer
